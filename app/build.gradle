@@ -72,6 +72,14 @@ android {
     namespace 'org.jitsi.meet'
 }
 
+android {
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+}
+
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
 
