@@ -64,20 +64,16 @@ android {
             }
         }
     }
-
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+     }
+ }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'org.jitsi.meet'
-}
-
-android {
-    packagingOptions {
-        jniLibs {
-            useLegacyPackaging = true
-        }
-    }
 }
 
 dependencies {
